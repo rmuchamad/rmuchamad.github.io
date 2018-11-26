@@ -4,6 +4,10 @@
 body {
     background-color: #689990;
 }
+html,body{
+  margin: 0;
+  padding: 0;
+}
 .hero h1 {
 	width: 108%;
 	text-align: center;
@@ -22,32 +26,53 @@ body {
 }	
 div.static {
     position: absolute;
-    bottom: 350px;
+    /*bottom: 350px;
     right: 1200px;
-    width: 100px;
+    width: 100px;*/
+    display: inline-block;
+    top: 145px;
+    left: 295px;
 }
 div.static1 {
     position: absolute;
-    bottom: 350px;
+    /*bottom: 350px;
     right: 200px;
-    width: 100px;
+    width: 100px;*/
+    display: inline-block;
+    top: 146px;
+    right: 287px;
 }
 div.static2 {
     position: absolute;
-    bottom: 325px;
+    /*bottom: 325px;
     right: 160px;
-    width: 100px;
+    width: 100px;*/
+    display: inline-block;
+    top: 287px;
+    right: 312px;
 }
 div.static3 {
     position: absolute;
-    bottom: 250px;
+    /*bottom: 250px;
     right: 1200px;
-    width: 100px;
+    width: 100px;*/
+    display: inline-block;
+    top: 287px;
+    left: 253px;
+    background-color: #ffffffb3;
+    padding: 30px 10px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 8px #868282;
     }body{ 
         background-image: url('genhalilintarlogin.JPG');
         background-size: cover;
     }
 </style>
+<script>
+    function myFunction(){
+        alert("Selamat Datang")
+    }
+</script>
 <head>
 	<title>login</title>		
 </head>
@@ -63,21 +88,20 @@ div.static3 {
     <img src="logo keluarga.PNG" alt="login">
 </div>
 <div class="static3">
-    <form action="/action_page.php">
-        Username:<br>
-        <input type="text" name="Username">
-        <br>
+    <form style="font-size: 14px" action="home 1.html">
+        Username:<p style="margin-top: 1px">
+        <input style="font-style: italic" type="text" placeholder="username" name="Username"></p>
         Password:<br>
-        <input type="password" name="password" id="password" maxlength="6">
-        <input type="submit"value="Log in">
+        <input style="font-style: italic" type="password" name="password" placeholder="password" id="password" maxlength="6"><br>
+    <center><input onclick="myFunction()" style="margin-top: 10px" type="submit"value="Log in"></center>
     </form>
 </div>
 <div class="static1">
-    <img src="logo guest.PNG" alt="guest">
+    <img src="logo guest.png" alt="guest">
 </div>
 <div class="static2">
     <form action="home.html">
-      <input type="submit"value="Guest">
+      <input onclick="myFunction()" type="submit"value="Guest">
   </form>
 </div>
 </body>

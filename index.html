@@ -4,6 +4,10 @@
 body {
 	background-color: #689990;
 }
+html,body{
+  margin: 0;
+  padding: 0;
+}
 .hero h1 {
 	width: 108%;
 	text-align: center;
@@ -22,32 +26,49 @@ body {
 }	
 div.static {
 	position: absolute;
-	bottom: 350px;
+	/*bottom: 350px;
 	right: 1200px;
-	width: 100px;
+	width: 100px;*/
+	display: inline-block;
+	top: 145px;
+	left: 295px;
 }
 div.static1 {
 	position: absolute;
-	bottom: 350px;
+	/*bottom: 350px;
 	right: 200px;
-	width: 100px;
+	width: 100px;*/
+	display: inline-block;
+	top: 146px;
+	right: 287px;
 }
 div.static2 {
 	position: absolute;
-	bottom: 325px;
+	/*bottom: 325px;
 	right: 160px;
-	width: 100px;
+	width: 100px;*/
+	display: inline-block;
+	top: 287px;
+	right: 312px;
 }
 div.static3 {
 	position: absolute;
-	bottom: 325px;
+	/*bottom: 325px;
 	right: 1160px;
-	width: 100px;
+	width: 100px;*/
+	display: inline-block;
+	top: 286px;
+	left: 324px;
 	}body{ 
 		background-image: url('genhalilintarlogin.JPG');
 		background-size: cover;
 	}
 </style>
+<script>
+    function myFunction(){
+        alert("Selamat Datang")
+    }
+</script>
 <head>
 	<title>selamat datang</title>		
 </head>
@@ -72,7 +93,7 @@ div.static3 {
 </div>
 <div class="static2">
 	<form action="home.html">
-		<input type="submit"value="Guest">
+		<input onclick="myFunction()" type="submit"value="Guest">
 	</form>
 </div>
 </body>
